@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Designs</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Stage Designs</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="images/stagedesignElegantSetup.jpeg" alt="Stage 1"><p>Stage 1: Elegant Setup</p></div>
+        <div class="gallery-item"><img src="images/stagefloraldeco.jpeg" alt="Stage 2"><p>Stage 2: Floral Decor</p></div>
+        <div class="gallery-item"><img src="images/staheDecoMinimi.jpg" alt="Stage 3"><p>Stage 3: Minimalistic</p></div>
+        <div class="gallery-item"><img src="images/stageDesignRusticTheme.jpg" alt="Stage 4"><p>Stage 4: Rustic Theme</p></div>
+        <div class="gallery-item"><img src="images/stagecolordesign.avif" alt="Stage 5"><p>Stage 5: Vibrant Colors</p></div>
+        <div class="gallery-item"><img src="images/stageDesignContemporaryLook.jpg" alt="Stage 6"><p>Stage 6: Contemporary Look</p></div>
+        <div class="gallery-item"><img src="images/stagedesignTraditionalStyle.jpg" alt="Stage 7"><p>Stage 7: Traditional Style</p></div>
+        <div class="gallery-item"><img src="images/stageDesignNatureInspired.jpg" alt="Stage 8"><p>Stage 8: Nature Inspired</p></div>
+        <div class="gallery-item"><img src="images/stagedesignArtisticSetup.jpg" alt="Stage 9"><p>Stage 9: Artistic Setup</p></div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

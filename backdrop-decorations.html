@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdrop Decorations</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+        <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Backdrop Decorations</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="images/backdrop.jpg" alt="Backdrop 1"><p>Backdrop 1: Floral Theme</p></div>
+        <div class="gallery-item"><img src="images/backtopdecorationsMinimalisticStyle.jpg" alt="Backdrop 2"><p>Backdrop 2: Minimalistic Style</p></div>
+        <div class="gallery-item"><img src="images/backdropdecorationsElegantDrapes.jpg" alt="Backdrop 3"><p>Backdrop 3: Elegant Drapes</p></div>
+        <div class="gallery-item"><img src="images/backdropRusticLook.jpg" alt="Backdrop 4"><p>Backdrop 4: Rustic Look</p></div>
+        <div class="gallery-item"><img src="images/backdropModernDesign.jpg" alt="Backdrop 5"><p>Backdrop 5: Modern Design</p></div>
+        <div class="gallery-item"><img src="images/backdropVibrantColors.jpg" alt="Backdrop 6"><p>Backdrop 6: Vibrant Colors</p></div>
+        <div class="gallery-item"><img src="images/backdropNatureInspired.jpg" alt="Backdrop 7"><p>Backdrop 7: Nature Inspired</p></div>
+        <div class="gallery-item"><img src="images/backdropContemporary.jpg" alt="Backdrop 8"><p>Backdrop 8: Contemporary</p></div>
+        <div class="gallery-item"><img src="images/backdropClassiclook.jpg" alt="Backdrop 9"><p>Backdrop 9: Classic Look</p></div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Decorations</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Table Decorations</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/tabledec.jpg" alt="Table 1">
+            <p>Table 1: Elegant Centerpiece</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/table.jpg" alt="Table 2">
+            <p>Table 2: Minimalistic Style</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tabledecorations ElegantCenterpiece2.jpg" alt="Table 3">
+            <p>Table 3: Floral Arrangement</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tabledecorationsElegantCenterpiece3.jpg" alt="Table 4">
+            <p>Table 4: Candle Decoration</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tabledecorationsElegantCenterpiece4.jpg" alt="Table 5">
+            <p>Table 5: Rustic Style</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tabledecorationsElegantCenterpiece5.jpg" alt="Table 6">
+            <p>Table 6: Modern Design</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/table decorationsElegant Centerpiece1.jpg" alt="Table 7">
+            <p>Table 7: Traditional Look</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tabledecorationsElegantCenterpiece6.jpg" alt="Table 8">
+            <p>Table 8: Colorful Arrangement</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tebledecorationSimple & Elegant9.jpg" alt="Table 9">
+            <p>Table 9: Simple & Elegant</p>
+        </div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

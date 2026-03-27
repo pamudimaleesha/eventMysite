@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<!-- WhatsApp -->
+<a href="https://wa.me/94787837277" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<section id="header">
+    <a href="index.html"><img src="images/logo.jpg" class="logo" height="50"></a>
+
+    <ul id="navbar">
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+    <div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+</section>
+<script >
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+
+<section id="page-header">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us</p>
+</section>
+
+<section id="contact-details" class="section-p1">
+
+    <div class="details">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> +94 78 78 37 277</p>
+        <p><strong>Email:</strong> akilaudayanga@gmail.com</p>
+        <p><strong>Location:</strong> Colombo , Sri Lanka</p>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+            <button class="normal">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>

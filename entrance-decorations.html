@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Decorations</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Entrance Decorations</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="images/entance.jpg" alt="Entrance 1"><p>Entrance 1: Elegant Arch</p></div>
+        <div class="gallery-item"><img src="images/Entrance.jpg" alt="Entrance 2"><p>Entrance 2: Floral Welcome</p></div>
+        <div class="gallery-item"><img src="images/entressMinimalDesign.jpg" alt="Entrance 3"><p>Entrance 3: Minimal Design</p></div>
+        <div class="gallery-item"><img src="images/entranceroustriclook.jpg" alt="Entrance 4"><p>Entrance 4: Rustic Look</p></div>
+        <div class="gallery-item"><img src="images/entressvibrentcolors.jpg" alt="Entrance 5"><p>Entrance 5: Vibrant Colors</p></div>
+        <div class="gallery-item"><img src="images/entancedesignContemporary.jpg" alt="Entrance 6"><p>Entrance 6: Contemporary</p></div>
+        <div class="gallery-item"><img src="images/emtrencedesignTraditional.jpg" alt="Entrance 7"><p>Entrance 7: Traditional</p></div>
+        <div class="gallery-item"><img src="images/entrancedesignNatureInspired.jpg" alt="Entrance 8"><p>Entrance 8: Nature Inspired</p></div>
+        <div class="gallery-item"><img src="images/entancedesignArtistic.jpg" alt="Entrance 9"><p>Entrance 9: Artistic</p></div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

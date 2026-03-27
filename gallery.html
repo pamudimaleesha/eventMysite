@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="#"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script >
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Our Gallery</h1>
+    </header>
+
+    <div class="topics-container">
+        <div class="topic-item">
+            <span class="page-number">01</span>
+            <h2>Table Decorations</h2>
+            <a href="table-decorations.html" class="btn">View Designs</a>
+        </div>
+
+        <div class="topic-item">
+            <span class="page-number">02</span>
+            <h2>Backdrop Decorations</h2>
+            <a href="backdrop-decorations.html" class="btn">View Designs</a>
+        </div>
+
+        <div class="topic-item">
+            <span class="page-number">03</span>
+            <h2>Stage Designs</h2>
+            <a href="stage-designs.html" class="btn">View Designs</a>
+        </div>
+
+        <div class="topic-item">
+            <span class="page-number">04</span>
+            <h2>Entrance Decorations</h2>
+            <a href="entrance-decorations.html" class="btn">View Designs</a>
+        </div>
+
+        <div class="topic-item">
+            <span class="page-number">05</span>
+            <h2>Oil Lamp Designs</h2>
+            <a href="oil-lamp-designs.html" class="btn">View Designs</a>
+        </div>
+
+        <div class="topic-item">
+            <span class="page-number">06</span>
+            <h2>Pirith Stage Designs</h2>
+            <a href="pirith-stage-designs.html" class="btn">View Designs</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

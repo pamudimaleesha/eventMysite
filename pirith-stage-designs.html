@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirith Stage Designs</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Pirith Stage Designs</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="images/pirithStageTraditional.jpg" alt="Pirith 1"><p>Pirith Stage 1: Traditional</p></div>
+        <div class="gallery-item"><img src="images/PirithStageDesignsElegantSetup.jpg" alt="Pirith 2"><p>Pirith Stage 2: Elegant Setup</p></div>
+        <div class="gallery-item"><img src="images/PirithStageDesignsFloralTheme.jpg" alt="Pirith 3"><p>Pirith Stage 3: Floral Theme</p></div>
+        <div class="gallery-item"><img src="images/pirith.jpg" alt="Pirith 4"><p>Pirith Stage 4: Minimalistic</p></div>
+        <div class="gallery-item"><img src="images/pirithstagedesignsVibrantcolors.jpg" alt="Pirith 5"><p>Pirith Stage 5: Vibrant Colors</p></div>
+        <div class="gallery-item"><img src="images/PirithStageDesignsContemporary.jpg" alt="Pirith 6"><p>Pirith Stage 6: Contemporary</p></div>
+        <div class="gallery-item"><img src="images/pirithstageRusticLook.jpg" alt="Pirith 7"><p>Pirith Stage 7: Rustic Look</p></div>
+        <div class="gallery-item"><img src="images/pirithstageartistic.jpg" alt="Pirith 8"><p>Pirith Stage 8: Artistic</p></div>
+        <div class="gallery-item"><img src="images/pirithstageModern.jpg" alt="Pirith 9"><p>Pirith Stage 9: Modern</p></div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

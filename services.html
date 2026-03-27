@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services - Event Decoration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section id="header">
+    <a href="index.html">
+        <img src="images/logo.jpg" class="logo" height="50">
+    </a>
+
+    <ul id="navbar">
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   <div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+</section>
+<script >
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+
+<!-- PAGE HEADER -->
+ <section id="page-header" class="services-header">
+
+    <h2>#Our Services</h2>
+    <p>Professional Event Decoration Solutions</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-p1">
+
+    <div class="service-box">
+        <img src="images/weddingEventBanner.jpg"  alt="Wedding Decoration">
+        <h3>Wedding Decorations</h3>
+        <p>Luxury wedding stages, table setups and full venue decoration.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="images/backdropRusticLook.jpg">
+        <h3>Birthday Parties</h3>
+        <p>Creative birthday themes for kids & adults.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="images/coporatebanner.jpg">
+        <h3>Corporate Events</h3>
+        <p>Professional decorations for meetings and functions.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="images/pirith.jpg">
+        <h3>Religious Events</h3>
+        <p>Pirith mandapaya & traditional decorations.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="images/backdrop.jpg">
+        <h3>Backdrop Designs</h3>
+        <p>Custom photo backdrops & stage backgrounds.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="images/tabledec.jpg">
+        <h3>Table Decorations</h3>
+        <p>Elegant and modern table styling.</p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="section-p1">
+<div class="col">
+<img class="logo" src="images/logo.png" alt="">
+<h4>Contact</h4>
+<p><strong>Phone:</strong>94 78 78 37 277</p>
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+<div class="col">
+<h4>Services</h4>
+<a href="#">Wedding Decorations</a>
+<a href="#">Birthday Decorations</a>
+<a href="#">Corporate Events</a>
+<a href="#">Religious Events</a>
+</div>
+<div class="col">
+<h4>About</h4>
+<a href="#">About Us</a>
+<a href="#">Contact</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms & Conditions</a>
+</div>
+<div class="col">
+<h4>Location</h4>
+<p>Sri Lanka</p>
+<p>Available Islandwide</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

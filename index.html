@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Event Decoration Website</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/94787837277" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="#"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+
+<!-- HERO -->
+<section id="hero">
+<h4>Make Your Events Memorable</h4>
+<h2>Elegant Decoration Designs</h2>
+<h1>For Every Occasion</h1>
+<p>Weddings | Parties | Religious Events | Corporate Functions</p>
+<!-- Button එක -->
+<a href="gallery.html" class="btn">View Designs</a>
+</section>
+
+<!-- FEATURES -->
+<section id="feature" class="section-p1">
+<div class="fe-box"><img src="images/Custom-Designs.jpg" alt=""><h6>Custom Designs</h6></div>
+<div class="fe-box"><img src="images/homeservice.jpg" alt=""><h6>On-site Setup</h6></div>
+<div class="fe-box"><img src="images/budjet.jpg" alt=""><h6>Budget Friendly</h6></div>
+<div class="fe-box"><img src="images/eventdecoration.jpg" alt=""><h6>Theme Decorations</h6></div>
+<div class="fe-box"><img src="images/wedding.jpg" alt=""><h6>Wedding Specialists</h6></div>
+<div class="fe-box"><img src="images/24Support.jpg" alt=""><h6>24/7 Support</h6></div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="product1" class="section-p1">
+<h2>Our Decoration Categories</h2>
+<p>Explore Our Creative Event Decoration Designs</p>
+<div class="pro-container">
+<div class="pro"><img src="images/tabledec.jpg" alt=""><div class="des"><h5>Table Decorations</h5><p>Elegant table setups for weddings & parties</p></div></div>
+<div class="pro"><img src="images/backdrop.jpg" alt=""><div class="des"><h5>Backdrop Decorations</h5><p>Beautiful photo backdrops & stage panels</p></div></div>
+<div class="pro"><img src="images/stage.jpg" alt=""><div class="des"><h5>Stage Designs</h5><p>Luxury wedding & event stages</p></div></div>
+<div class="pro"><img src="images/Entrance.jpg" alt=""><div class="des"><h5>Entrance Decorations</h5><p>Grand welcome entrances</p></div></div>
+<div class="pro"><img src="images/oillamp.jpg" alt=""><div class="des"><h5>Oil Lamp Designs</h5><p>Traditional Sri Lankan lamp decorations</p></div></div>
+<div class="pro"><img src="images/pirith.jpg" alt=""><div class="des"><h5>Pirith Stage Designs</h5><p>Religious & cultural setups</p></div></div>
+</div>
+</section>
+
+<!-- BANNER -->
+<section id="banner" class="section-m1">
+<h4>Special Packages</h4>
+<h2>Up to <span>30% Off</span> for Wedding Decorations</h2>
+<button class="normal">Explore Packages</button>
+</section>
+
+<!-- SMALL BANNERS -->
+<section id="sm-banner" class="section-p1">
+<div class="banner-box">
+<h4>Wedding Events</h4>
+<h2>Elegant Wedding Decorations</h2>
+<span>Make your big day unforgettable</span>
+<button class="white">View More</button>
+</div>
+<div class="banner-box banner-box2">
+<h4>Corporate Events</h4>
+<h2>Professional Setup Designs</h2>
+<span>Perfect for business functions</span>
+<button class="white">Explore</button>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="section-p1 section-m1">
+<div class="newstext"><h4>Signup for Updates</h4><p>Get updates about our latest decorations & <span>special offers</span></p></div>
+<div class="form">
+<input type="text" placeholder="Your Email Address">
+<button class="normal">Sign Up</button>
+</div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking" class="section-p1">
+<h2>Book Your Event</h2>
+<p>Fill this form and we will contact you</p>
+<form id="bookingForm">
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email Address" required>
+<select required>
+<option value="">Select Event Type</option>
+<option>Wedding</option>
+<option>Birthday</option>
+<option>Corporate Event</option>
+<option>Religious Event</option>
+</select>
+<input type="date" required>
+<textarea placeholder="Your Requirements" required></textarea>
+<button type="submit" class="normal">Submit Booking</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer class="section-p1">
+<div class="col">
+<img class="logo" src="images/logo.png" alt="">
+<h4>Contact</h4>
+<p><strong>Phone:</strong>94 78 78 37 277</p>
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+<div class="col">
+<h4>Services</h4>
+<a href="#">Wedding Decorations</a>
+<a href="#">Birthday Decorations</a>
+<a href="#">Corporate Events</a>
+<a href="#">Religious Events</a>
+</div>
+<div class="col">
+<h4>About</h4>
+<a href="#">About Us</a>
+<a href="#">Contact</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms & Conditions</a>
+</div>
+<div class="col">
+<h4>Location</h4>
+<p>Sri Lanka</p>
+<p>Available Islandwide</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Lamp Designs</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- HEADER -->
+<section id="header">
+
+<a href="#">
+<img src="images/logo.jpg" class="logo" alt="Website Logo" height="50">
+</a>
+
+<ul id="navbar">
+    <a href="#" id="close"><i class="fas fa-times"></i></a>
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li id="lg-bag">
+        <a href="contact.html"><i class="fas fa-phone"></i></a>
+    </li>
+</ul>
+
+<div id="mobile">
+    <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+<script>
+  const bar = document.getElementById('bar');       // hamburger icon
+  const close = document.getElementById('close');   // X icon
+  const navbar = document.getElementById('navbar'); // navbar එක
+
+  // navbar open කිරීම
+  bar.addEventListener('click', () => {
+    navbar.classList.add('active');
+  });
+
+  // navbar close කිරීම
+  close.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+</script>
+    <header>
+        <h1>Oil Lamp Designs</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="images/oillampTraditional.jpg" alt="Oil Lamp 1"><p>Oil Lamp 1: Traditional</p></div>
+        <div class="gallery-item"><img src="images/oilLampElegant.jpg" alt="Oil Lamp 2"><p>Oil Lamp 2: Elegant</p></div>
+        <div class="gallery-item"><img src="images/oillampMinimalStyle.jpg" alt="Oil Lamp 3"><p>Oil Lamp 3: Minimal Style</p></div>
+        <div class="gallery-item"><img src="images/OilLampoilLampFloraldecor.jpg" alt="Oil Lamp 4"><p>Oil Lamp 4: Floral Decor</p></div>
+        <div class="gallery-item"><img src="images/oillampContemporary.jpg" alt="Oil Lamp 5"><p>Oil Lamp 5: Contemporary</p></div>
+        <div class="gallery-item"><img src="images/oilLampROsticLook.jpg" alt="Oil Lamp 6"><p>Oil Lamp 6: Rustic Look</p></div>
+        <div class="gallery-item"><img src="images/oillampArtistic.jpg" alt="Oil Lamp 7"><p>Oil Lamp 7: Artistic</p></div>
+        <div class="gallery-item"><img src="images/oilLampVibrantColors.jpg" alt="Oil Lamp 8"><p>Oil Lamp 8: Vibrant Colors</p></div>
+        <div class="gallery-item"><img src="images/oillampElegantsetup.jpg" alt="Oil Lamp 9"><p>Oil Lamp 9: Elegant Setup</p></div>
+    </div>
+
+    <div class="back-btn">
+        <a href="gallery.html" class="btn">Back to Gallery</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
